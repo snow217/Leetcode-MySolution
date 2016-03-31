@@ -1,0 +1,23 @@
+# 219 Contains Duplicate II
+Good Solution:
+Using Hashmap in order to store all of unique value;
+
+public class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        //initial condition!!!!!!
+     if(nums==null || nums.length<2) {
+          return false;  
+     }
+            Map<Integer, Integer> answer = new HashMap<Integer, Integer>();
+            for (int i = 0; i < nums.length; i++) {
+                if(answer.containsKey(nums[i]){
+                    if(i - answer.get(nums[i]) <= k ){
+                        return true;
+                    }
+                }else{
+                    answer.put(nums[i],i);
+                }
+                return false;
+            }
+    }
+}
