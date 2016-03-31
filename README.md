@@ -1,2 +1,3 @@
 # Leetcode-MySolution
-Leetcode Practice
+Leetcode Practice by Sherry Xu
+1st time coding practice.
